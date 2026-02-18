@@ -1,0 +1,13 @@
+diff --git a/core/src/Cuda/Kokkos_Cuda_Instance.hpp b/core/src/Cuda/Kokkos_Cuda_Instance.hpp
+index 7dfb7e788..4040010ab 100644
+--- a/core/src/Cuda/Kokkos_Cuda_Instance.hpp
++++ b/core/src/Cuda/Kokkos_Cuda_Instance.hpp
+@@ -58,7 +58,7 @@ struct CudaTraits {
+   using ConstantGlobalBufferType =
+       unsigned long[ConstantMemoryUsage / sizeof(unsigned long)];
+ 
+-  static constexpr int ConstantMemoryUseThreshold = 0x000200 /* 512 bytes */;
++  static constexpr int ConstantMemoryUseThreshold = 0x000800 /* 512 bytes */;
+ };
+ 
+ //----------------------------------------------------------------------------
