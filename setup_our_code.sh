@@ -1,6 +1,6 @@
-$x=${PWD}
+x=${PWD}
 mkdir exe
-$e=${PWD}/exe
+e=${PWD}/exe
 git clone https://github.com/euphoricpoptarts/jet_community_edition.git
 cd jet_community_edition
 mkdir build
