@@ -12,6 +12,7 @@ mkdir -p experiments/ablation/mlh
 mkdir -p experiments/ablation/no_afterburner
 mkdir -p experiments/ablation/no_uncoarsen
 mkdir -p experiments/ablation/no_uncoarsen_2xlm
+mkdir -p experiments/ablation/no_simulated_annealing
 mkdir -p experiments/extra_timing/plouvain
 mkdir -p experiments/extra_timing/pleiden
 mkdir -p experiments/extra_timing/pleiden+
@@ -28,6 +29,7 @@ python3 python_scripts/run_cluster_experiment.py ./exe/ablation_mlh 0 graphs met
 python3 python_scripts/run_cluster_experiment.py ./exe/ablation_no_afterburner 0 graphs metrics experiments/ablation/no_afterburner
 python3 python_scripts/run_cluster_experiment.py ./exe/ablation_no_uncoarsen 0 graphs metrics experiments/ablation/no_uncoarsen
 python3 python_scripts/run_cluster_experiment.py ./exe/ablation_no_uncoarsen_2xlm 0 graphs metrics experiments/ablation/no_uncoarsen_2xlm
+python3 python_scripts/run_cluster_experiment.py ./exe/ablation_no_simulated_annealing 0 graphs metrics experiments/ablation/no_simulated_annealing
 python3 python_scripts/run_cluster_experiment.py ./exe/plouvain_extra_timing 0 graphs metrics experiments/extra_timing/plouvain
 python3 python_scripts/run_cluster_experiment.py ./exe/pleiden_extra_timing 0 graphs metrics experiments/extra_timing/pleiden
 python3 python_scripts/run_cluster_experiment.py ./exe/pleiden+_extra_timing 0 graphs metrics experiments/extra_timing/pleiden+
@@ -44,6 +46,7 @@ mkdir -p results/ablation/mlh
 mkdir -p results/ablation/no_afterburner
 mkdir -p results/ablation/no_uncoarsen
 mkdir -p results/ablation/no_uncoarsen_2xlm
+mkdir -p results/ablation/no_simulated_annealing
 mkdir -p results/extra_timing/plouvain
 mkdir -p results/extra_timing/pleiden
 mkdir -p results/extra_timing/pleiden+
@@ -60,6 +63,7 @@ python3 python_scripts/parse_cluster_experiment.py experiments/ablation/mlh resu
 python3 python_scripts/parse_cluster_experiment.py experiments/ablation/no_afterburner results/ablation/no_afterburner
 python3 python_scripts/parse_cluster_experiment.py experiments/ablation/no_uncoarsen results/ablation/no_uncoarsen
 python3 python_scripts/parse_cluster_experiment.py experiments/ablation/no_uncoarsen_2xlm results/ablation/no_uncoarsen_2xlm
+python3 python_scripts/parse_cluster_experiment.py experiments/ablation/no_simulated_annealing results/ablation/no_simulated_annealing
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/plouvain results/extra_timing/plouvain
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/pleiden results/extra_timing/pleiden
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/pleiden+ results/extra_timing/pleiden+

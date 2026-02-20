@@ -32,6 +32,9 @@ cp app/plouvain ${e}/ablation_no_uncoarsen
 git checkout ablation_no_uncoarsen_2xlm
 make -j
 cp app/plouvain ${e}/ablation_no_uncoarsen_2xlm
+git checkout ablation_no_simulated_annealing
+make -j
+cp app/plouvain ${e}/ablation_no_simulated_annealing
 git checkout master
 git apply ${x}/enable_extra_timing.patch
 make -j
