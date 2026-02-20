@@ -10,6 +10,7 @@ make -j
 cp app/plouvain ${e}/plouvain_base
 cp app/pleiden ${e}/pleiden_base
 cp app/pleiden+ ${e}/pleiden+_base
+cp app/meme ${e}/meme
 git checkout ablation_contract_bad
 make -j
 cp app/plouvain ${e}/ablation_contract_bad

@@ -14,7 +14,7 @@ def getGraphList():
         data = list(reader)
     return data
 
-executable = "./build/app/meme"
+executable = "./exe/meme"
 waitLimit = 1200
 formatString = "Final objective: {mod:g}"
 clusterFileTemp = "clustering_data{}.txt"

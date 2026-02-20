@@ -63,3 +63,4 @@ python3 python_scripts/parse_cluster_experiment.py experiments/ablation/no_uncoa
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/plouvain results/extra_timing/plouvain
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/pleiden results/extra_timing/pleiden
 python3 python_scripts/parse_cluster_experiment.py experiments/extra_timing/pleiden+ results/extra_timing/pleiden+
+python3 python_scripts/run_memeclusters.py graphs results/meme/results.txt
