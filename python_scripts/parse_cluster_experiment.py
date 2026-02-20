@@ -18,7 +18,7 @@ def getGraphList():
         data = list(reader)
     return data
 
-stemParse = r"(.+)_(louvain|leiden)_Sampling_Data"
+stemParse = r"(.+)_plouvain_Sampling_Data"
 
 def getStats(filepath):
     with open(filepath,"r") as f:
