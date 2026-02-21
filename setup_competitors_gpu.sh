@@ -1,0 +1,14 @@
+x=${PWD}
+mkdir comp_exe
+mkdir comp
+cd comp
+git clone https://github.com/euphoricpoptarts/louvain-communities-cuda.git
+git clone https://github.com/euphoricpoptarts/GALA.git
+cd ${x}/comp/louvain-communities-cuda
+git checkout experiment
+nvcc -std=c++17 -arch=sm_100 -O3 -Xcompiler -fopenmp -x cu main.cxx -o ${x}/comp_exe/v-louvain
+cd ${x}/comp/GALA
+git checkout experiment
+cd src
+make -j
+cp gala_main ${x}/comp_exe/gala
